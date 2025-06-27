@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using OrderDataProcessor.Data;
+using OrderDataProcessor.Orders;
+
+class Program
+{
+
+    static void Main(string[] args)
+    {
+/*
+    
+*/
+    }
+}
