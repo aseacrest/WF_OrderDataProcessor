@@ -20,7 +20,7 @@ public class OrderProcessorTests
     [Test]
     public void GetTotalOrders_ShouldReturnCorrectCount()
     {
-        var totalOrders = _orderProcessor != null ? OrderProcessor.GetTotalOrders() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var totalOrders = _orderProcessor != null ? _orderProcessor.GetTotalOrders() : throw new InvalidOperationException("_orderprocessor is not initialized.");
 
         Assert.That(totalOrders, Is.EqualTo(10), "The total number of orders should be 10");
     }
@@ -28,7 +28,7 @@ public class OrderProcessorTests
     [Test]
     public void GetTotalRevenue_ShouldReturnCorrectSum()
     {
-        var totalRevenue = _orderProcessor != null ? OrderProcessor.GetTotalRevenue() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var totalRevenue = _orderProcessor != null ? _orderProcessor.GetTotalRevenue() : throw new InvalidOperationException("_orderprocessor is not initialized.");
 
         Assert.That(totalRevenue, Is.EqualTo(1357.00m), "The total revenue should be 1,357.00");
     }
@@ -36,7 +36,7 @@ public class OrderProcessorTests
     [Test]
     public void GetAverageOrderAmount_ShouldReturnCorrectAverage()
     {
-        var averageOrderAmount = _orderProcessor != null ? OrderProcessor.GetAverageOrderAmount() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var averageOrderAmount = _orderProcessor != null ? _orderProcessor.GetAverageOrderAmount() : throw new InvalidOperationException("_orderprocessor is not initialized.");
         Assert.That(averageOrderAmount, Is.EqualTo(135.70m).Within(0.01m), "The average order amount should be 135.70");
 
     }
@@ -44,7 +44,7 @@ public class OrderProcessorTests
     [Test]
     public void GetTotalSpentPerCustomer_ShouldReturnCorrectAmounts()
     {
-        var totalSpentPerCustomer = _orderProcessor != null ? OrderProcessor.GetTotalSpentPerCustomer() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var totalSpentPerCustomer = _orderProcessor != null ? _orderProcessor.GetTotalSpentPerCustomer() : throw new InvalidOperationException("_orderprocessor is not initialized.");
 
 
         Assert.That(totalSpentPerCustomer["Alice"], Is.EqualTo(450.50m), "Alice's total spent should be 450.50.");
@@ -69,7 +69,7 @@ public class OrderProcessorTests
         };
 
 
-        var results = _orderProcessor != null ? OrderProcessor.GetTotalOrdersAndTotalsAmountsPerMonth() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var results = _orderProcessor != null ? _orderProcessor.GetTotalOrdersAndTotalsAmountsPerMonth() : throw new InvalidOperationException("_orderprocessor is not initialized.");
         Assert.That(results, Is.Not.Null, "Results should not be null.");
 
         foreach (var expected in expectedResults)

@@ -10,6 +10,16 @@
                 "${workspaceFolder}/WF_OrderDataProcessor.Processor/WF_OrderDataProcessor.Processor.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/WF_OrderDataProcessor.Tests/WF_OrderDataProcessor.Tests.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }
