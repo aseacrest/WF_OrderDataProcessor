@@ -69,7 +69,7 @@ public class OrderProcessorTests
         };
 
 
-        var results = _orderProcessor != null ? _orderProcessor.GetTotalOrdersAndTotalsAmountsPerMonth() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var results = _orderProcessor != null ? _orderProcessor.GetTotalOrdersAndTotalAmountPerMonth() : throw new InvalidOperationException("_orderprocessor is not initialized.");
         Assert.That(results, Is.Not.Null, "Results should not be null.");
 
         foreach (var expected in expectedResults)
