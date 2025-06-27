@@ -3,40 +3,39 @@ using OrderDataProcessor.Models;
 namespace OrderDataProcessor.Orders
 {
 
-    public class OrderProcessor
+    public class OrderProcessor(List<Order> orders)
     {
 
-        private readonly List<Order> _orders;
-        public OrderProcessor(List<Order> orders) => _orders = orders;
+        private readonly List<Order> _orders = orders;
 
-        public int GetTotalOrders()
+        public static int GetTotalOrders()
         {
-            //TODO: Calculate totla number of ordersS
+            //TODO: Calculate total number of orders
             return 0; // Default. Remove to add logic
         }
 
-        public decimal GetTotalRevenue()
+        public static decimal GetTotalRevenue()
         {
-            //TODO: Calculate totla revenue
+            //TODO: Calculate total revenue
             return 0.0m; // Default. Remove to add logic
         }
 
-        public decimal GetAverageOrderAmount()
+        public static decimal GetAverageOrderAmount()
         {
             //TODO: Caclulate average order amount
             return 0.0m; // Default. Remove to add logic
         }
 
-        public Dictionary<string, Decimal> GetTotalSpentPerCustomer()
+        public static Dictionary<string, Decimal> GetTotalSpentPerCustomer()
         {
-            //TODO: Caclulate total number of orders by customers and total order value by customer
-            return new Dictionary<string, decimal>();// Default. Remove to add logic
+            //TODO: Caclulate the total order count and total amount by customer
+            return [];// Default. Remove to add logic
         }
 
-        public Dictionary<string, (int TotlaOrders, decimal TotalAmount)> GetTotalOrdersAndTotalsAmountsPerMonth()
+        public static Dictionary<string, (int TotalOrders, decimal TotalAmount)> GetTotalOrdersAndTotalsAmountsPerMonth()
         {
-            //TODO: Caclulate total number of orders by customers and total order value by customer
-            return new Dictionary<string, (int TotlaOrders, decimal TotalAmount)>();  // Default. Remove to add logic
+            //TODO: Caclulate the total order count and total amount by month
+            return [];  // Default. Remove to add logic
         }
 
 
