@@ -32,7 +32,7 @@ namespace OrderDataProcessor.Orders
             return [];// Default. Remove to add logic
         }
 
-        public Dictionary<string, (int TotalOrders, decimal TotalAmount)> GetTotalOrdersAndTotalAmountsPerMonth()
+        public Dictionary<string, (int TotalOrders, decimal TotalAmount)> GetTotalOrdersAndTotalAmountPerMonth()
         {
             //TODO: Caclulate the total order count and total amount by month
             return [];  // Default. Remove to add logic
