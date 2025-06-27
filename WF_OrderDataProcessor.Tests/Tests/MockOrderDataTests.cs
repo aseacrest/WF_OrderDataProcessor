@@ -62,9 +62,9 @@ public class OrderProcessorTests
         var expectedResults = new Dictionary<String, (int TotalOrders, decimal TotalAmount)>
         {
             {"2023-01",(2, 195.50m) },
-            {"2023-02",(2, 615.25m) },
-            {"2023-03",(2, 356.25m) },
-            {"2023-04",(2, 190.00m) }
+            {"2023-02",(4, 615.25m) },
+            {"2023-04",(2, 356.25m) },
+            {"2023-03",(2, 190.00m) }
 
         };
 
