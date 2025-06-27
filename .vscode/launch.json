@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch (WF_OrderDataProcessor.Processor)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/WF_OrderDataProcessor.Processor/bin/Debug/net8.0/WF_OrderDataProcessor.Processor.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/WF_OrderDataProcessor.Processor",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}

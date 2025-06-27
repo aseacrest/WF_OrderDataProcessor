@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/WF_OrderDataProcessor.Processor/WF_OrderDataProcessor.Processor.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

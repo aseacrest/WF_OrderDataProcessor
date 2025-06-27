@@ -1,5 +1,4 @@
 
-using NuGet.Frameworks;
 using NUnit.Framework.Internal;
 using OrderDataProcessor.Data;
 using OrderDataProcessor.Models;
@@ -21,9 +20,9 @@ public class OrderProcessorTests
     [Test]
     public void GetTotalOrders_ShouldReturnCorrectCount()
     {
-        var totaOrders = _orderProcessor != null ? OrderProcessor.GetTotalOrders() : throw new InvalidOperationException("_orderprocessor is not initialized.");
+        var totalOrders = _orderProcessor != null ? OrderProcessor.GetTotalOrders() : throw new InvalidOperationException("_orderprocessor is not initialized.");
 
-        Assert.That(totaOrders, Is.EqualTo(10), "The total number of ordes should be 10");
+        Assert.That(totalOrders, Is.EqualTo(10), "The total number of orders should be 10");
     }
 
     [Test]
