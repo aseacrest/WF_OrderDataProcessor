@@ -14,9 +14,9 @@ namespace OrderDataProcessor.Orders
             return 0; // Default. Remove to add logic
         }
 
-        public decimal GetTotalRevenue()
+        public decimal GetTotalAmount()
         {
-            //TODO: Calculate total revenue
+            //TODO: Calculate total amount of all orders
             return 0.0m; // Default. Remove to add logic
         }
 
@@ -26,7 +26,7 @@ namespace OrderDataProcessor.Orders
             return 0.0m; // Default. Remove to add logic
         }
 
-        public Dictionary<string, Decimal> GetTotalSpentPerCustomer()
+        public Dictionary<string, Decimal> GetTotalAmountPerCustomer()
         {
             //TODO: Caclulate the total order count and total amount by customer
             return [];// Default. Remove to add logic
