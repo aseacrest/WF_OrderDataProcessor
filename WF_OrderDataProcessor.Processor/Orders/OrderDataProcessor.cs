@@ -28,7 +28,7 @@ namespace OrderDataProcessor.Orders
 
         public Dictionary<string, Decimal> GetTotalAmountPerCustomer()
         {
-            //TODO: Caclulate the total order count and total amount by customer
+            //TODO: Caclulate the total amount by customer
             return [];// Default. Remove to add logic
         }
 
