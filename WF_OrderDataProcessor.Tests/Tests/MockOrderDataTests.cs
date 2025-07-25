@@ -74,7 +74,7 @@ public class OrderProcessorTests
 
         foreach (var expected in expectedResults)
         {
-            Assert.That(results != null && results.ContainsKey(expected.Key), Is.True, $"Result shuld contain key {expected.Key}.");
+            Assert.That(results != null && results.ContainsKey(expected.Key), Is.True, $"Result should contain key {expected.Key}.");
             Assert.That(results, Is.Not.Null, "Results should not be null.");
             Assert.That(results![expected.Key].TotalOrders, Is.EqualTo(expected.Value.TotalOrders), $"Total orders for {expected.Key} should match.");
             Assert.That(results![expected.Key].TotalAmount, Is.EqualTo(expected.Value.TotalAmount), $"Total amount for {expected.Key} should match.");
